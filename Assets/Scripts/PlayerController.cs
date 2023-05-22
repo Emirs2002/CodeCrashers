@@ -33,7 +33,8 @@ public class PlayerController : MonoBehaviour
     public float waitAfterDashing;
     private float dashRechargeCounter;
 
-    public GameObject standing, ball;
+    public GameObject standing;
+    public GameObject ball;
     public float waitToBall;
     private float ballCounter;
     public Animator ballAnim;
@@ -119,8 +120,8 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        //ball mode
-        if (!ball.activeSelf)
+    //ball mode
+       if (!ball.activeSelf)
         {
             if (Input.GetAxisRaw("Vertical") < -.9f)
             {
@@ -163,9 +164,7 @@ public class PlayerController : MonoBehaviour
         {
             ballAnim.SetFloat("speed", Mathf.Abs(theRB.velocity.x));
         }
-
-
-    }
+}
 
     public void ShowAfterImage()
     {

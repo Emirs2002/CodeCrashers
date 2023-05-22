@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - player
   layers:
   - Default
   - TransparentFX
@@ -41,11 +43,11 @@ TagManager:
   - name: bg
     uniqueID: 1401819363
     locked: 0
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Player
     uniqueID: 1139293047
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: ground
     uniqueID: 2426318419

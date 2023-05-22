@@ -11,6 +11,8 @@ public class BulletController : MonoBehaviour
 
     public GameObject impactEffect;
 
+    public int damageAmount = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,10 @@ public class BulletController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if(other.tag == "Enemy")
+        {
+            other.GetComponent<EnemyHealthController>().DamageEnemy(damageAmount);
+        }
         if (impactEffect != null)
         {
             Instantiate(impactEffect, transform.position, Quaternion.identity);
