@@ -1,0 +1,1289 @@
+fileFormatVersion: 2
+guid: 0341866f74deb974f81a27db2183279d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Karen sheet_0
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 272
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36d999eb070f6a40b3c1552cb594145
+      internalID: 1792148761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_1
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 272
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02553c7879c8983408affcc5a2ed3eeb
+      internalID: 1268165093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_2
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 272
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d94d27abdde5944a5055bb6883d337
+      internalID: 1291801245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 272
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13d3327d5b62fc4782d16ae10968a0a
+      internalID: 1879404021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 272
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daeb80378230d3f45aa36b0a690dac7c
+      internalID: -626713666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 272
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ec96923a8259343bd60c9abfa4223c
+      internalID: 1175956836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2329
+        y: 272
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe3bc061ab8e3643a72dcd762c93fd8
+      internalID: -86494588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 272
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79777864b0f15048a386d3892aab1fe
+      internalID: 1140114227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3021
+        y: 272
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0438198743aa4da4797090baeee45a6a
+      internalID: 598259897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_9
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 243
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce071e8bbd6d77c4794242002ff3abec
+      internalID: -2009436402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_10
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 219
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db5eb936eecb274e84f6189587e73f8
+      internalID: 1863810046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_11
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 243
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a477f63fd6f9d64d9da751f1162520a
+      internalID: 1482249991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_12
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 219
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d477c80386f5e043a42025554147cff
+      internalID: 1556872321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_13
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 243
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122c3304297ada641ae91800e2f60f43
+      internalID: -916502204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 219
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8fc7f07f7289f45a906c860fddd416
+      internalID: -1416194046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 243
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ca1930182f81e4eaef9bf6456e13c3
+      internalID: 1694252253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 219
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ff6c1581c576c4e994ab0b44bd50f0
+      internalID: 2140442128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 243
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f18dfaa78fd4264dbbc1740fb68fc9f
+      internalID: -755225605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 219
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97bed9187dec854459c763871b994ea4
+      internalID: -1214647582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 243
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297b3f5a6537d7640a7d425b9146aae0
+      internalID: -620983643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 219
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15fee1a746bb05489a8d95ae53d0db0
+      internalID: -1827417685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 243
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24f4d4c806439140b096c343704d97a
+      internalID: 190118029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2392
+        y: 219
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf84c4702b5eede4bb3c974cdf7a1934
+      internalID: -678965481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2634
+        y: 242
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3f74d9062100f428566d8e6d434153
+      internalID: 1635435442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_24
+      rect:
+        serializedVersion: 2
+        x: 2738
+        y: 219
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1cab2afec0a0f145b105470995a239b
+      internalID: 1625373024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_25
+      rect:
+        serializedVersion: 2
+        x: 2958
+        y: 242
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c2ad7376ff3394384f3f8479b20fb2
+      internalID: 597942870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_26
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 0
+        width: 104
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901711446cc83a64583dfd15b6232d2c
+      internalID: 885008897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_27
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 218
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652d8eec5ebf2094e9ed9866216cd0a4
+      internalID: 1490408319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_28
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 0
+        width: 104
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027b911207267cb4f8a1e5d016dd2c9b
+      internalID: 1000376178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_29
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1
+        width: 105
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702663084f5dda14d92672f6ee052ca3
+      internalID: -1398944120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 0
+        width: 107
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb38ab04a8a809479cb386a79a12bd8
+      internalID: 878578301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 0
+        width: 104
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe35bb546d37df4d8db2b48d3144b5b
+      internalID: 544018926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 0
+        width: 102
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3675683985da1de428dc8d8701752cc4
+      internalID: -441412723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_33
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 0
+        width: 104
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2d0d0bc2beec64c96de1c4adfcaacf
+      internalID: 1369534720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_34
+      rect:
+        serializedVersion: 2
+        x: 2494
+        y: 0
+        width: 105
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e08ad3f468fcc4bb6175b57e72d269
+      internalID: 1168101197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_35
+      rect:
+        serializedVersion: 2
+        x: 2819
+        y: 0
+        width: 106
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c1d8687b9f84640beee0672e476af7
+      internalID: 882134078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_36
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 106
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85f45190e5071b4e94e257f9a35e323
+      internalID: 816046982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_37
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 106
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ed6f1507e6bcc48a7700fee0ebb4f6
+      internalID: -1210594463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 106
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d040314b49f8c41ae398795dc4054b
+      internalID: 1403674091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_39
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 106
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b0522839975484196d9058eeefc171
+      internalID: 674983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_40
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 106
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e6266ba69474b4bb6cfb7d418f9079
+      internalID: -1889568356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_41
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 106
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e89f0db976ddd54aa33b28110f379fa
+      internalID: -436952917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 106
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d0cfa4a56d3fd45b7ad374a5aa196f
+      internalID: 958644169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 106
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b5e48e5138e4341b58cab81600f86c
+      internalID: 2120354242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 106
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585f0d1d1e6c20d4e8800a4ba01a8ffa
+      internalID: 1533722588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 106
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ed96d85428d2640a07fb6105466c10
+      internalID: -675013045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_46
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 106
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fcdcdb0e8612ff4bb66fdb549772050
+      internalID: -1185619567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_47
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 106
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee777d9bc5cdd364792b803f3e8c5b3a
+      internalID: 64908082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_48
+      rect:
+        serializedVersion: 2
+        x: 2356
+        y: 106
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ad79c2ef3da914a9867305ed325df7
+      internalID: 1382687387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_49
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 104
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b1d6fdc7842d94888790a8b7a5ded5
+      internalID: -2030240487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_50
+      rect:
+        serializedVersion: 2
+        x: 2673
+        y: 104
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9cab25de69b99418c7034a1cb4b871
+      internalID: -1531258040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_51
+      rect:
+        serializedVersion: 2
+        x: 2972
+        y: 104
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01af3b368bee4c6409e82cb0b26d6043
+      internalID: 1880382419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karen sheet_52
+      rect:
+        serializedVersion: 2
+        x: 2997
+        y: 104
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60efc08e405e6fc429cc4b2d6dab4b85
+      internalID: 538308294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Karen sheet_0: 1792148761
+      Karen sheet_1: 1268165093
+      Karen sheet_10: 1863810046
+      Karen sheet_11: 1482249991
+      Karen sheet_12: 1556872321
+      Karen sheet_13: -916502204
+      Karen sheet_14: -1416194046
+      Karen sheet_15: 1694252253
+      Karen sheet_16: 2140442128
+      Karen sheet_17: -755225605
+      Karen sheet_18: -1214647582
+      Karen sheet_19: -620983643
+      Karen sheet_2: 1291801245
+      Karen sheet_20: -1827417685
+      Karen sheet_21: 190118029
+      Karen sheet_22: -678965481
+      Karen sheet_23: 1635435442
+      Karen sheet_24: 1625373024
+      Karen sheet_25: 597942870
+      Karen sheet_26: 885008897
+      Karen sheet_27: 1490408319
+      Karen sheet_28: 1000376178
+      Karen sheet_29: -1398944120
+      Karen sheet_3: 1879404021
+      Karen sheet_30: 878578301
+      Karen sheet_31: 544018926
+      Karen sheet_32: -441412723
+      Karen sheet_33: 1369534720
+      Karen sheet_34: 1168101197
+      Karen sheet_35: 882134078
+      Karen sheet_36: 816046982
+      Karen sheet_37: -1210594463
+      Karen sheet_38: 1403674091
+      Karen sheet_39: 674983
+      Karen sheet_4: -626713666
+      Karen sheet_40: -1889568356
+      Karen sheet_41: -436952917
+      Karen sheet_42: 958644169
+      Karen sheet_43: 2120354242
+      Karen sheet_44: 1533722588
+      Karen sheet_45: -675013045
+      Karen sheet_46: -1185619567
+      Karen sheet_47: 64908082
+      Karen sheet_48: 1382687387
+      Karen sheet_49: -2030240487
+      Karen sheet_5: 1175956836
+      Karen sheet_50: -1531258040
+      Karen sheet_51: 1880382419
+      Karen sheet_52: 538308294
+      Karen sheet_6: -86494588
+      Karen sheet_7: 1140114227
+      Karen sheet_8: 598259897
+      Karen sheet_9: -2009436402
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
