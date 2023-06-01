@@ -8,6 +8,7 @@ public class PausaMenu : MonoBehaviour
     public GameObject pausaMenu;
     public string NewGameScene;
     public static bool isPaused;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,7 @@ public class PausaMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)){
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Return)){
 
             if (isPaused){
                 Reanudar();
@@ -27,7 +28,7 @@ public class PausaMenu : MonoBehaviour
         }
     }
 
-    public void PausarJuego()
+    private void PausarJuego()
     {
         Debug.Log("Pausando");
         pausaMenu.SetActive(true);
@@ -49,9 +50,4 @@ public class PausaMenu : MonoBehaviour
 
     }
 
-    public void Cerrar(){
-
-        Application.Quit();
-        Debug.Log("Cerrando juego");
-    }
 }
