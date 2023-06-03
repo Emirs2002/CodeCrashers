@@ -6,14 +6,17 @@ using UnityEngine.SceneManagement;
 public class PausaMenu : MonoBehaviour
 {
     public GameObject pausaMenu;
+    public GameObject controles;
     public string NewGameScene;
     public static bool isPaused;
+    public static bool isActiveControl;
     private PlayerController thePlayer;
    
     // Start is called before the first frame update
     void Start()
     {
         pausaMenu.SetActive(false);
+        controles.SetActive(false);
         thePlayer = PlayerHealthController.instance.GetComponent<PlayerController>();
     }
 
@@ -22,9 +25,11 @@ public class PausaMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Return)){
 
-            if (isPaused){
+            if ((isPaused)  && (!isActiveControl)){
                 Reanudar();
                 
+            }else if ((isPaused)  && (isActiveControl)){
+                VolverMenuPausa();
             }else{
                 PausarJuego();
                  
@@ -57,6 +62,21 @@ public class PausaMenu : MonoBehaviour
 
         UnityEngine.SceneManagement.SceneManager.LoadScene(NewGameScene);
 
+    }
+
+    public void VerControles(){
+
+        Debug.Log("Viendo Controles");
+        controles.SetActive(true);
+        isActiveControl = true;
+        pausaMenu.SetActive(false);
+    }
+
+    public void VolverMenuPausa(){
+        Debug.Log("Volviendo");
+        controles.SetActive(false);
+        isActiveControl = false;
+        pausaMenu.SetActive(true);
     }
 
 }
