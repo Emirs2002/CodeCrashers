@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 180
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +103,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Carnet estudiantil sheet_1
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 426
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af3dc208addb5c46aa2ae02edfa1262
+      internalID: 1705805096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnet estudiantil sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 426
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94ba5466b0d68643a94b0448dd40f5c
+      internalID: -1396781914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnet estudiantil sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 426
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222b626135126614cbb75a6e8fe97722
+      internalID: 1696324269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnet estudiantil sheet_5
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 68
+        width: 491
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d96be5525ac9324592b7f18147f2359
+      internalID: 1314067623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnet estudiantil sheet_6
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 353
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82cfe29b552dde24ab8e147738d0aa6c
+      internalID: -1982749020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnet estudiantil sheet_7
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 78
+        width: 396
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ce81936cddef742b62fb03251f4977
+      internalID: -950811598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnet estudiantil sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 279
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7778c42365895c4a9f0839d0d0486b9
+      internalID: -477966446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnet estudiantil sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 80
+        width: 291
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37847900f4047164d94f1f48e06c5cce
+      internalID: -1699159825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnet estudiantil sheet_12
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 62
+        width: 228
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3fcc29625974f84884d09896615aee6
+      internalID: 705729818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnet estudiantil sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 82
+        width: 219
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e706e3ced030cd647a16dc69affafa71
+      internalID: -808752046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +324,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Carnet estudiantil sheet_0: -974216088
+      Carnet estudiantil sheet_1: 1705805096
+      Carnet estudiantil sheet_10: -1699159825
+      Carnet estudiantil sheet_11: -12596256
+      Carnet estudiantil sheet_12: 705729818
+      Carnet estudiantil sheet_13: 1080841078
+      Carnet estudiantil sheet_14: -719988305
+      Carnet estudiantil sheet_15: -808752046
+      Carnet estudiantil sheet_16: 269519755
+      Carnet estudiantil sheet_17: -964164828
+      Carnet estudiantil sheet_18: 1119432022
+      Carnet estudiantil sheet_19: -844765263
+      Carnet estudiantil sheet_2: -1396781914
+      Carnet estudiantil sheet_20: 1468491757
+      Carnet estudiantil sheet_21: -1360277757
+      Carnet estudiantil sheet_22: -469117923
+      Carnet estudiantil sheet_23: 1755004187
+      Carnet estudiantil sheet_24: -1460021548
+      Carnet estudiantil sheet_3: 1696324269
+      Carnet estudiantil sheet_4: -399074907
+      Carnet estudiantil sheet_5: 1314067623
+      Carnet estudiantil sheet_6: -1982749020
+      Carnet estudiantil sheet_7: -950811598
+      Carnet estudiantil sheet_8: -477966446
+      Carnet estudiantil sheet_9: -1028395302
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

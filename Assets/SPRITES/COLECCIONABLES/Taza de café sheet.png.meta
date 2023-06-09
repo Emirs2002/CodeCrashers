@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 180
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +103,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "Taza de caf\xE9 sheet_4"
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 84
+        width: 273
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be5248e38e13e549b83869640763833
+      internalID: -2109764590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Taza de caf\xE9 sheet_5"
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 111
+        width: 188
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769ddc917e4f74b4f9f387be38faa362
+      internalID: -1031941228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Taza de caf\xE9 sheet_6"
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 119
+        width: 138
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7cb5739e61be849a9022ebf5dbd877
+      internalID: 1352058661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Taza de caf\xE9 sheet_7"
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 117
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16964ea45c9a4d44ba0527dda0ddf0d
+      internalID: -603283247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Taza de caf\xE9 sheet_8"
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 122
+        width: 97
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d464fc6cd16aa44abecbcf941abed4f
+      internalID: -1246380445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +219,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Taza de caf\xE9 sheet_0": 1399484752
+      "Taza de caf\xE9 sheet_1": 1448904592
+      "Taza de caf\xE9 sheet_10": 1536238170
+      "Taza de caf\xE9 sheet_11": -1818153870
+      "Taza de caf\xE9 sheet_12": 897802344
+      "Taza de caf\xE9 sheet_13": -478529578
+      "Taza de caf\xE9 sheet_2": -280473816
+      "Taza de caf\xE9 sheet_3": 1254604874
+      "Taza de caf\xE9 sheet_4": -2109764590
+      "Taza de caf\xE9 sheet_5": -1031941228
+      "Taza de caf\xE9 sheet_6": 1352058661
+      "Taza de caf\xE9 sheet_7": -603283247
+      "Taza de caf\xE9 sheet_8": -1246380445
+      "Taza de caf\xE9 sheet_9": -1901351240
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
