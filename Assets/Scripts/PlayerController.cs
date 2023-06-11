@@ -39,119 +39,134 @@ public class PlayerController : MonoBehaviour
     private float ballCounter;
     public Animator ballAnim;
 
+    public bool canMove;
+
+    public bool canShoot;
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+        canMove = true;
+        canShoot = true;
     }
     // Update is called once per frame
     void Update()
     {
-        if (dashRechargeCounter > 0)
+
+        if (canMove)
         {
-            dashRechargeCounter -= Time.deltaTime;
-        }
-        else
-        {
-            if (Input.GetButtonDown("Fire2") && standing.activeSelf)
+            if (dashRechargeCounter > 0)
             {
-                dashCounter = dashTime;
-
-                ShowAfterImage();
-            }
-        }
-
-
-        if (dashCounter >= 0)
-        {
-            dashCounter -= Time.deltaTime;
-            theRB.velocity = new Vector2(dashSpeed * transform.localScale.x, theRB.velocity.y);
-
-            afterImageCounter -= Time.deltaTime;
-            if (afterImageCounter <= 0)
-            {
-                ShowAfterImage();
-            }
-
-            dashRechargeCounter = waitAfterDashing;
-
-        }
-        else
-        {
-            //move sideways
-            theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, theRB.velocity.y);
-
-            //flip player
-            if (theRB.velocity.x < 0)
-            {
-                transform.localScale = new Vector3(-1f, 1f, 1f);
-            }
-            else if (theRB.velocity.x > 0)
-            {
-                transform.localScale = Vector3.one;
-            }
-        }
-
-        //check if player is on ground
-        isOnGround = Physics2D.OverlapCircle(groundPoint.position, 0.2f, whatIsGround);
-
-        if (Input.GetButtonDown("Jump") && (isOnGround || canDoubleJump))
-        {
-            if (isOnGround)
-            {
-                canDoubleJump = true;
+                dashRechargeCounter -= Time.deltaTime;
             }
             else
             {
-                canDoubleJump = false;
-                anim.SetTrigger("doubleJump");
+                if (Input.GetButtonDown("Fire2") && standing.activeSelf)
+                {
+                    dashCounter = dashTime;
+
+                    ShowAfterImage();
+                }
             }
 
-            theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
-        }
 
-        //shooting
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Instantiate(shotToFire, shotPoint.position, shotPoint.rotation).moveDir = new Vector2(transform.localScale.x, 0f);
-
-            anim.SetTrigger("shotFired"); //play animation
-        }
-
-
-    //ball mode
-       if (!ball.activeSelf)
-        {
-            if (Input.GetAxisRaw("Vertical") < -.9f)
+            if (dashCounter >= 0)
             {
-                ballCounter -= Time.deltaTime;
-                if (ballCounter <= 0)
+                dashCounter -= Time.deltaTime;
+                theRB.velocity = new Vector2(dashSpeed * transform.localScale.x, theRB.velocity.y);
+
+                afterImageCounter -= Time.deltaTime;
+                if (afterImageCounter <= 0)
                 {
-                    ball.SetActive(true);
-                    standing.SetActive(false);
+                    ShowAfterImage();
+                }
+
+                dashRechargeCounter = waitAfterDashing;
+
+            }
+            else
+            {
+                //move sideways
+                theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, theRB.velocity.y);
+
+                //flip player
+                if (theRB.velocity.x < 0)
+                {
+                    transform.localScale = new Vector3(-1f, 1f, 1f);
+                }
+                else if (theRB.velocity.x > 0)
+                {
+                    transform.localScale = Vector3.one;
+                }
+            }
+
+            //check if player is on ground
+            isOnGround = Physics2D.OverlapCircle(groundPoint.position, 0.2f, whatIsGround);
+
+            if (Input.GetButtonDown("Jump") && (isOnGround || canDoubleJump))
+            {
+                if (isOnGround)
+                {
+                    canDoubleJump = true;
+                }
+                else
+                {
+                    canDoubleJump = false;
+                    anim.SetTrigger("doubleJump");
+                }
+
+                theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+            }
+
+            //shooting
+            if(canShoot){
+
+            
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    Instantiate(shotToFire, shotPoint.position, shotPoint.rotation).moveDir = new Vector2(transform.localScale.x, 0f);
+
+                    anim.SetTrigger("shotFired"); //play animation
+                }
+
+            }
+
+            //ball mode
+            if (!ball.activeSelf)
+            {
+                if (Input.GetAxisRaw("Vertical") < -.9f)
+                {
+                    ballCounter -= Time.deltaTime;
+                    if (ballCounter <= 0)
+                    {
+                        ball.SetActive(true);
+                        standing.SetActive(false);
+                    }
+                }
+                else
+                {
+                    ballCounter = waitToBall;
                 }
             }
             else
             {
-                ballCounter = waitToBall;
-            }
-        }
-        else
-        {
-            if (Input.GetAxisRaw("Vertical") > +.9f)
-            {
-                ballCounter -= Time.deltaTime;
-                if (ballCounter <= 0)
+                if (Input.GetAxisRaw("Vertical") > +.9f)
                 {
-                    ball.SetActive(false);
-                    standing.SetActive(true);
+                    ballCounter -= Time.deltaTime;
+                    if (ballCounter <= 0)
+                    {
+                        ball.SetActive(false);
+                        standing.SetActive(true);
+                    }
+                }
+                else
+                {
+                    ballCounter = waitToBall;
                 }
             }
-            else
-            {
-                ballCounter = waitToBall;
-            }
+        } else 
+        { theRB.velocity = Vector2.zero;
         }
 
         if (standing.activeSelf)
@@ -164,7 +179,7 @@ public class PlayerController : MonoBehaviour
         {
             ballAnim.SetFloat("speed", Mathf.Abs(theRB.velocity.x));
         }
-}
+    }
 
     public void ShowAfterImage()
     {
