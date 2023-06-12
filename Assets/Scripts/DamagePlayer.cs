@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamagePlayer : MonoBehaviour
 {
-    public int damageAmount= 1;
+    public int damageAmount;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
