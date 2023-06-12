@@ -6,6 +6,8 @@ public class BombController : MonoBehaviour
 {
     public float timeToExplode = .5f;
     public GameObject explosionPrefab;
+    public float blastRadius;
+    public LayerMask whatIsDestructible;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +18,25 @@ public class BombController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timeToExplode -= Time.deltaTime;
+        if (timeToExplode <= 0)
+        {
+            if (explosionPrefab != null)
+            {
+                Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            }
 
+            Destroy(gameObject);
+
+            Collider2D[] objectsToRemove = Physics2D.OverlapCircleAll(transform.position, blastRadius, whatIsDestructible);
+
+            if (objectsToRemove.Length > 0)
+            {
+                foreach (Collider2D obj in objectsToRemove)
+                {
+                    Destroy(obj.gameObject);
+                }
+            }
+        }
     }
 }

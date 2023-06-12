@@ -39,11 +39,16 @@ public class PlayerController : MonoBehaviour
     private float ballCounter;
     public Animator ballAnim;
 
+    public Transform bombPoint;
+    public GameObject bomb;
+
+    private PlayerAbilityTracker abilities;
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+        abilities = GetComponent<PlayerAbilityTracker>();
     }
     // Update is called once per frame
     void Update()
@@ -54,7 +59,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            if (Input.GetButtonDown("Fire2") && standing.activeSelf)
+            if (Input.GetButtonDown("Fire2") && standing.activeSelf && abilities.canDash)
             {
                 dashCounter = dashTime;
 
@@ -96,7 +101,7 @@ public class PlayerController : MonoBehaviour
         //check if player is on ground
         isOnGround = Physics2D.OverlapCircle(groundPoint.position, 0.2f, whatIsGround);
 
-        if (Input.GetButtonDown("Jump") && (isOnGround || canDoubleJump))
+        if (Input.GetButtonDown("Jump") && (isOnGround || (canDoubleJump && abilities.canDoubleJump)))
         {
             if (isOnGround)
             {
@@ -114,16 +119,24 @@ public class PlayerController : MonoBehaviour
         //shooting
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(shotToFire, shotPoint.position, shotPoint.rotation).moveDir = new Vector2(transform.localScale.x, 0f);
+            if (standing.activeSelf)
+            {
 
-            anim.SetTrigger("shotFired"); //play animation
+                Instantiate(shotToFire, shotPoint.position, shotPoint.rotation).moveDir = new Vector2(transform.localScale.x, 0f);
+                anim.SetTrigger("shotFired"); //play animation
+            }
+            else if (ball.activeSelf && abilities.canDropBomb)
+            {
+                Instantiate(bomb, bombPoint.position, bombPoint.rotation);
+            }
+
         }
 
 
-    //ball mode
-       if (!ball.activeSelf)
+        //ball mode
+        if (!ball.activeSelf)
         {
-            if (Input.GetAxisRaw("Vertical") < -.9f)
+            if (Input.GetAxisRaw("Vertical") < -.9f && abilities.canBecomeBall)
             {
                 ballCounter -= Time.deltaTime;
                 if (ballCounter <= 0)
@@ -164,7 +177,7 @@ public class PlayerController : MonoBehaviour
         {
             ballAnim.SetFloat("speed", Mathf.Abs(theRB.velocity.x));
         }
-}
+    }
 
     public void ShowAfterImage()
     {
