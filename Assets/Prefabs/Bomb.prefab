@@ -125,3 +125,7 @@ MonoBehaviour:
   whatIsDestructible:
     serializedVersion: 2
     m_Bits: 512
+  damageAmount: 10
+  whatIsDamageable:
+    serializedVersion: 2
+    m_Bits: 2048

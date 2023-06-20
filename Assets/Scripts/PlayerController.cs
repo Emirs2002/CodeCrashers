@@ -44,6 +44,9 @@ public class PlayerController : MonoBehaviour
     public bool canMove;
     public bool canShoot;
 
+    private float coyoteTime = 0.3f;
+    private float coyoteCounter;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -108,9 +111,19 @@ public class PlayerController : MonoBehaviour
             //checking if on the ground
             isOnGround = Physics2D.OverlapCircle(groundPoint.position, .2f, whatIsGround);
 
-            //jumping
-            if (Input.GetButtonDown("Jump") && (isOnGround || (canDoubleJump && abilities.canDoubleJump)))
+            if (isOnGround)
             {
+                coyoteCounter = coyoteTime;
+            }
+            else
+            {
+                coyoteCounter -= Time.deltaTime;
+            }
+
+            //jumping
+            if (Input.GetButtonDown("Jump") && (coyoteCounter > 0f || (canDoubleJump && abilities.canDoubleJump)))
+            {
+
                 if (isOnGround)
                 {
                     canDoubleJump = true;
@@ -120,11 +133,11 @@ public class PlayerController : MonoBehaviour
                 {
                     canDoubleJump = false;
 
-                    anim.SetTrigger("doubleJump");
-
                 }
 
                 theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+
+                coyoteCounter = 0f;
             }
 
             //shooting
