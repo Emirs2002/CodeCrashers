@@ -9,7 +9,14 @@ public class PlayerHealthController : MonoBehaviour
 
     private void Awake()
     {
+        if(instance == null)
+        {
         instance = this;
+        DontDestroyOnLoad(gameObject);
+        } else
+        {
+            Destroy(gameObject);
+        }
     }
 
     //[HideInInspector]
@@ -68,7 +75,9 @@ public class PlayerHealthController : MonoBehaviour
             if(currentHealth<= 0)
             {
                 currentHealth = 0;
-                gameObject.SetActive(false);
+                //gameObject.SetActive(false);
+
+                RespawnController.instance.Respawn();
             }
             else
             {
@@ -79,4 +88,25 @@ public class PlayerHealthController : MonoBehaviour
         }
 
     }
+
+    public void FillHealth()
+    {
+        currentHealth = maxHealth;
+        UIController.instance.UpdateHealth(currentHealth, maxHealth);
+
+    }
+
+    public void HealPlayer(int healAmount)
+    {
+        currentHealth += healAmount;
+
+        if(currentHealth>maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        
+        UIController.instance.UpdateHealth(currentHealth, maxHealth);
+
+    }
+
 }
