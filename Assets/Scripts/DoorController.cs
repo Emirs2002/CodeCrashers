@@ -56,5 +56,7 @@ public class DoorController : MonoBehaviour
         RespawnController.instance.SetSpawn(exitPoint.position);
         player.canMove = true;
         player.anim.enabled = true;
+
+        SceneManager.LoadScene(levelToLoad);
     }
 }
