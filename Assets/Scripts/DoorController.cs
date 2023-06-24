@@ -52,10 +52,14 @@ public class DoorController : MonoBehaviour
 
         player.anim.enabled = false;
 
+        UIController.instance.StartFadeToBlack();
+
         yield return new WaitForSeconds(1.5f);
         RespawnController.instance.SetSpawn(exitPoint.position);
         player.canMove = true;
         player.anim.enabled = true;
+
+        UIController.instance.StartFadeFromBlack();
 
         SceneManager.LoadScene(levelToLoad);
     }
