@@ -20,6 +20,7 @@ public class UIController : MonoBehaviour
     }
 
     public Slider healthSlider;
+    public Slider stabilitySlider;
     public Image fadeScreen;
     public float fadeSpeed = 2f;
     private bool fadingToBlack, fadingFromBlack;
@@ -53,6 +54,12 @@ public class UIController : MonoBehaviour
     {
         healthSlider.maxValue = maxHealth;
         healthSlider.value = currentHealth;
+    }
+
+    public void UpdateStability(int currentStability, int maxStability)
+    {
+        stabilitySlider.maxValue = maxStability;
+        stabilitySlider.value = currentStability;
     }
 
     public void StartFadeToBlack(){
