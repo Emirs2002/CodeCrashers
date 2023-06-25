@@ -20,6 +20,7 @@ public class UIController : MonoBehaviour
     }
 
     public Slider healthSlider;
+    public Slider stabilitySlider;
 
     // Start is called before the first frame update
     void Start()
@@ -37,5 +38,11 @@ public class UIController : MonoBehaviour
     {
         healthSlider.maxValue = maxHealth;
         healthSlider.value = currentHealth;
+    }
+
+    public void UpdateStability(int currentStability, int maxStability)
+    {
+        stabilitySlider.maxValue = maxStability;
+        stabilitySlider.value = currentStability;
     }
 }
