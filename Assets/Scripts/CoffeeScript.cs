@@ -4,8 +4,23 @@ using UnityEngine;
 
 public class CoffeeScript : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D other) {
+    public int stabilityAmount;
+
+    public GameObject pickupEffect;
+
+    void OnTriggerEnter2D(Collider2D other) 
+    {
     ScoreTextScript.coffeeAmount += 1;
+    if(other.tag == "Player")
+    {
+        PlayerHealthController.instance.HandleStability(stabilityAmount);
+        if (pickupEffect != null)
+            {
+                Instantiate(pickupEffect, transform.position, Quaternion.identity);
+            }
+    }
     Destroy(gameObject);
-   }
+    }
+
+   
 }

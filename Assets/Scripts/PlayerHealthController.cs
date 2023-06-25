@@ -22,6 +22,8 @@ public class PlayerHealthController : MonoBehaviour
     //[HideInInspector]
     public int currentHealth;
     public int maxHealth;
+    public int currentStability;
+    public int maxStability;
 
     public float invincibilityLength;
     private float invincCounter;
@@ -35,6 +37,10 @@ public class PlayerHealthController : MonoBehaviour
         currentHealth = maxHealth;
 
         UIController.instance.UpdateHealth(currentHealth, maxHealth);
+
+        currentStability = 0;
+
+        UIController.instance.UpdateStability(currentStability, maxStability);
 
     }
 
@@ -107,6 +113,18 @@ public class PlayerHealthController : MonoBehaviour
         
         UIController.instance.UpdateHealth(currentHealth, maxHealth);
 
+    }
+
+    public void HandleStability(int stabilityAmount)
+    {
+        currentStability += stabilityAmount;
+
+        if(currentStability > maxStability)
+        {
+            currentStability = maxStability;
+        }
+
+        UIController.instance.UpdateStability(currentStability, maxStability);
     }
 
 }
