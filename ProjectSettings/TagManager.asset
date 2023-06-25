@@ -43,6 +43,9 @@ TagManager:
   - name: bg
     uniqueID: 1401819363
     locked: 0
+  - name: door
+    uniqueID: 1216156709
+    locked: 0
   - name: Player
     uniqueID: 1139293047
     locked: 0
