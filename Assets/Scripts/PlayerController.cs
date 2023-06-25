@@ -46,6 +46,15 @@ public class PlayerController : MonoBehaviour
 
     private float coyoteTime = 0.3f;
     private float coyoteCounter;
+    private float timeBetweenAttack;
+    public float startTimeBetweenAttack;
+
+    public Transform attackPos;
+    public LayerMask whatIsEnemies;
+    public float attackRange;
+
+    public int damageAmount;
+
 
     // Start is called before the first frame update
     void Start()
@@ -158,6 +167,31 @@ public class PlayerController : MonoBehaviour
                 }
             }
 
+            //melee
+            if (timeBetweenAttack <= 0)
+            {
+                if (Input.GetKeyUp(KeyCode.E))
+                {
+                    anim.SetTrigger("Attack");
+                    Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+
+                    foreach (Collider2D col in enemiesToDamage)
+                    {
+                        EnemyHealthController enemyHealth = col.GetComponent<EnemyHealthController>();
+                        if (enemyHealth != null)
+                        {
+                            enemyHealth.DamageEnemy(damageAmount);
+                        }
+                    }
+                }
+                timeBetweenAttack = startTimeBetweenAttack;
+            }
+            else
+            {
+                timeBetweenAttack -= Time.deltaTime;
+            }
+
+
             //ball mode
             if (!ball.activeSelf)
             {
@@ -224,5 +258,11 @@ public class PlayerController : MonoBehaviour
         Destroy(image.gameObject, afterImageLifetime);
 
         afterImageCounter = timeBetweenAfterImages;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPos.position, attackRange);
     }
 }
