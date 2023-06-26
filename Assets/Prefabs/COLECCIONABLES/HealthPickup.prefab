@@ -115,4 +115,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healAmount: 3
-  pickupEffect: {fileID: 2408635038871275464, guid: e247a70855383ae44b3d25a2255528b9, type: 3}
+  pickupEffect: {fileID: 7369317808613240160, guid: e247a70855383ae44b3d25a2255528b9, type: 3}
