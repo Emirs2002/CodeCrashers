@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
 
     public string NewGameScene;
+    public GameObject continueButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,4 +25,6 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("Cerrando juego");
     }
+
+
 }
