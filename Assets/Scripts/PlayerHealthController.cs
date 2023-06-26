@@ -9,12 +9,21 @@ public class PlayerHealthController : MonoBehaviour
 
     private void Awake()
     {
+        if(instance == null)
+        {
         instance = this;
+        DontDestroyOnLoad(gameObject);
+        } else
+        {
+            Destroy(gameObject);
+        }
     }
 
     //[HideInInspector]
     public int currentHealth;
     public int maxHealth;
+    public int currentStability;
+    public int maxStability;
 
     public float invincibilityLength;
     private float invincCounter;
@@ -28,6 +37,10 @@ public class PlayerHealthController : MonoBehaviour
         currentHealth = maxHealth;
 
         UIController.instance.UpdateHealth(currentHealth, maxHealth);
+
+        currentStability = 0;
+
+        UIController.instance.UpdateStability(currentStability, maxStability);
 
     }
 
@@ -68,7 +81,9 @@ public class PlayerHealthController : MonoBehaviour
             if(currentHealth<= 0)
             {
                 currentHealth = 0;
-                gameObject.SetActive(false);
+                //gameObject.SetActive(false);
+
+                RespawnController.instance.Respawn();
             }
             else
             {
@@ -79,4 +94,37 @@ public class PlayerHealthController : MonoBehaviour
         }
 
     }
+
+    public void FillHealth()
+    {
+        currentHealth = maxHealth;
+        UIController.instance.UpdateHealth(currentHealth, maxHealth);
+
+    }
+
+    public void HealPlayer(int healAmount)
+    {
+        currentHealth += healAmount;
+
+        if(currentHealth>maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        
+        UIController.instance.UpdateHealth(currentHealth, maxHealth);
+
+    }
+
+    public void HandleStability(int stabilityAmount)
+    {
+        currentStability += stabilityAmount;
+
+        if(currentStability > maxStability)
+        {
+            currentStability = maxStability;
+        }
+
+        UIController.instance.UpdateStability(currentStability, maxStability);
+    }
+
 }
