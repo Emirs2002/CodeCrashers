@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour
     public BulletController shotToFire;
     public Transform shotPoint;
 
+    public LaptopController laptop;
+    public Transform laptopPoint;
+
     private bool canDoubleJump;
 
     public float dashSpeed, dashTime;
@@ -52,8 +55,8 @@ public class PlayerController : MonoBehaviour
     public Transform attackPos;
     public LayerMask whatIsEnemies;
     public float attackRange;
-
     public int damageAmount;
+    public PlayerHealthController currentStability;
 
 
     // Start is called before the first frame update
@@ -162,15 +165,20 @@ public class PlayerController : MonoBehaviour
                 else if (ball.activeSelf && abilities.canDropBomb)
                 {
                     Instantiate(bomb, bombPoint.position, bombPoint.rotation);
-
-
                 }
+            }
+
+            //super_attack
+            if (Input.GetKeyDown(KeyCode.Q) && standing.activeSelf && abilities.canSuperAttack)
+            {
+                anim.SetTrigger("Attack");
+                Instantiate(laptop, laptopPoint.position, laptopPoint.rotation).moveDir = new Vector2(transform.localScale.x, 0f);
             }
 
             //melee
             if (timeBetweenAttack <= 0)
             {
-                if (Input.GetKeyUp(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.E) && standing.activeSelf)
                 {
                     anim.SetTrigger("Attack");
                     Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
@@ -190,7 +198,6 @@ public class PlayerController : MonoBehaviour
             {
                 timeBetweenAttack -= Time.deltaTime;
             }
-
 
             //ball mode
             if (!ball.activeSelf)
