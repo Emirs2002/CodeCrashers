@@ -12,6 +12,7 @@ public class Batnary : MonoBehaviour
     public Rigidbody2D theRB;
 
     public Animator anim;
+    private bool isMoving = false;
 
 
     // Start is called before the first frame update
@@ -23,43 +24,41 @@ public class Batnary : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     if(player == null)
-    {
-    return;
-    } 
-    if(chase==true)
-    {
-        Chase();
-       
-    }  
-    else 
-    {
-        ReturnStartPoint();
+        if (player == null)
+        {
+            return;
+        }
+        if (chase == true)
+        {
+            Chase();
+            anim.SetFloat("speed", speed);
+        }
+        else
+        {
+            ReturnStartPoint();
+        }
+        Flip();
 
-    }
-    Flip();
-     anim.SetFloat("speed", Mathf.Abs(theRB.velocity.x));
     }
 
     private void Chase()
     {
-        transform.position=Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
     }
 
     private void ReturnStartPoint()
     {
-        transform.position=Vector2.MoveTowards(transform.position, startingPoint.position, speed * Time.deltaTime);
-
+        transform.position = Vector2.MoveTowards(transform.position, startingPoint.position, speed * Time.deltaTime);
     }
     private void Flip()
     {
-        if(transform.position.x > player.transform.position.x)
+        if (transform.position.x > player.transform.position.x)
         {
-            transform.rotation = Quaternion.Euler(0,0,0);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         else
         {
-            transform.rotation = Quaternion.Euler(0,180,0);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
         }
     }
 }
