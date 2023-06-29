@@ -175,7 +175,7 @@ public class PlayerController : MonoBehaviour
             }
 
             //super_attack
-            if (Input.GetKeyDown(KeyCode.Q) && standing.activeSelf && abilities.canSuperAttack && PlayerHealthController.instance.currentStability >= 3)
+            if (Input.GetKeyDown(KeyCode.Q) && standing.activeSelf && PlayerHealthController.instance.currentStability >= 3)
             {
                 anim.SetTrigger("Attack");
                 Instantiate(laptop, laptopPoint.position, laptopPoint.rotation).moveDir = new Vector2(transform.localScale.x, 0f);
