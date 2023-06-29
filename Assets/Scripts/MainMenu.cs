@@ -11,11 +11,14 @@ public class MainMenu : MonoBehaviour
 
     public GameObject continueButton;
 
-    
+    public PlayerAbilityTracker player;
 
     // Start is called before the first frame update
     void Start()
     {
+        player = GetComponent<PlayerAbilityTracker>();
+        continueButton.SetActive(false);
+
         if(PlayerPrefs.HasKey("ContinueLevel")){
             continueButton.SetActive(true);
         }
@@ -32,7 +35,14 @@ public class MainMenu : MonoBehaviour
 
     public void Continue(){
 
+        Debug.Log("Continuando partida");
+
+        player.gameObject.SetActive(true);
+        
+        player.transform.position = new Vector3(PlayerPrefs.GetFloat("PosX"),PlayerPrefs.GetFloat("PosY"),PlayerPrefs.GetFloat("PosZ"));
+
         UnityEngine.SceneManagement.SceneManager.LoadScene(PlayerPrefs.GetString("ContinueLevel"));
+        
     }
 
     public void SalirJuego(){
