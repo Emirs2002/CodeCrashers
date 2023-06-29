@@ -90,8 +90,6 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 6551253509486566529}
   - {fileID: 6551253509599768714}
-  - {fileID: 0}
-  - {fileID: 6551253509599768714}
   moveSpeed: 5
   waitAtPoints: 0.5
   jumpForce: 10

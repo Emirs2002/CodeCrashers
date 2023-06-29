@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,469 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Java sheet_0
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 99
+        width: 247
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5172b0efebff30045a33956e22630874
+      internalID: -1501644372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_2
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 238
+        width: 99
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7246e8ccffda1074297a6463adf05362
+      internalID: 120183604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_3
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 229
+        width: 80
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61a9d32a21aac24db7729b586b2b534
+      internalID: -261175697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 189
+        width: 71
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca66367ac8662024b847c430b0f95384
+      internalID: 696976948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 184
+        width: 59
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc566bcf48daac48a871460a693bef3
+      internalID: 1846027798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_8
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 206
+        width: 172
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a1705df0112ad409e4d1d70fefffd1
+      internalID: 265680354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_9
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 174
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbde94f1638933f4aae9e048cb8fb76d
+      internalID: -884914349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 147
+        width: 89
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6aa03303b2a1046a3fa4edfec4e85d
+      internalID: 1362366098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 162
+        width: 51
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d601acaaaaaf148b308acbe69c62c2
+      internalID: -1530242417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 92
+        width: 305
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0fd251686a5bc48a40791324f1c7e3
+      internalID: -1304281067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_14
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 174
+        width: 135
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843c0992f8c5754478f1de99e4597578
+      internalID: -1554700670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 166
+        width: 125
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd67a0a6077fa44b8082a0dea1149fd
+      internalID: 217081879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 144
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4be0ae420cfa34f838f20444d000e3
+      internalID: -1074213232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_18
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 142
+        width: 98
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f0d732d5097b74daa94393e9b9dda8
+      internalID: -953418029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 144
+        width: 98
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2218299b98c41aa44a4b953b22af48c8
+      internalID: -438072395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 132
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d204eb1e03a54d54e95aabf19069beb9
+      internalID: 1788921846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 123
+        width: 70
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8703d0eb1b8bb0f41b40d1edcafd62a5
+      internalID: -643482120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 132
+        width: 70
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247be41fe7f86404aa0930f3ca42665a
+      internalID: 86706378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_24
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 110
+        width: 172
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a214c370be49daf458a8efa24514f94f
+      internalID: -623235036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 116
+        width: 50
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06cbe4a1a26d5fa4797e0c242eadf24b
+      internalID: -381321037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 100
+        width: 125
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9f44a9c50206046b87a5dd51028c91
+      internalID: -1310657062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Java sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 102
+        width: 89
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef62d5b73648d345a29de7c51cd1ca5
+      internalID: 1535510755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +576,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Java sheet_0: -1501644372
+      Java sheet_1: 1624452280
+      Java sheet_10: 1362366098
+      Java sheet_11: -1530242417
+      Java sheet_12: -1304281067
+      Java sheet_13: -963320686
+      Java sheet_14: -1554700670
+      Java sheet_15: 217081879
+      Java sheet_16: -1074213232
+      Java sheet_17: -102989248
+      Java sheet_18: -953418029
+      Java sheet_19: -438072395
+      Java sheet_2: 120183604
+      Java sheet_20: 1788921846
+      Java sheet_21: -643482120
+      Java sheet_22: 86706378
+      Java sheet_23: 2043765219
+      Java sheet_24: -623235036
+      Java sheet_25: -381321037
+      Java sheet_26: -1310657062
+      Java sheet_27: 1535510755
+      Java sheet_3: -261175697
+      Java sheet_4: 696976948
+      Java sheet_5: 1846027798
+      Java sheet_6: -506453189
+      Java sheet_7: 1177033465
+      Java sheet_8: 265680354
+      Java sheet_9: -884914349
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
