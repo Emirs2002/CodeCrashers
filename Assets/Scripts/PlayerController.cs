@@ -56,7 +56,8 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsEnemies;
     public float attackRange;
     public int damageAmount;
-    public PlayerHealthController currentStability;
+
+    public int currentStability;
 
 
     // Start is called before the first frame update
@@ -65,11 +66,16 @@ public class PlayerController : MonoBehaviour
         abilities = GetComponent<PlayerAbilityTracker>();
 
         canMove = true;
+
+
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (canMove && Time.timeScale != 0)
         {
 
@@ -169,10 +175,11 @@ public class PlayerController : MonoBehaviour
             }
 
             //super_attack
-            if (Input.GetKeyDown(KeyCode.Q) && standing.activeSelf && abilities.canSuperAttack)
+            if (Input.GetKeyDown(KeyCode.Q) && standing.activeSelf && abilities.canSuperAttack && PlayerHealthController.instance.currentStability >= 3)
             {
                 anim.SetTrigger("Attack");
                 Instantiate(laptop, laptopPoint.position, laptopPoint.rotation).moveDir = new Vector2(transform.localScale.x, 0f);
+                PlayerHealthController.instance.DecreaseStability(3);
             }
 
             //melee

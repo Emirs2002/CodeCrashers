@@ -128,9 +128,17 @@ public class PlayerHealthController : MonoBehaviour
         UIController.instance.UpdateStability(currentStability, maxStability);
     }
 
-    public static int returnStability(int currentStability)
+    public void DecreaseStability(int stabilityAmount)
     {
-        return currentStability;
+        currentStability -= stabilityAmount;
+
+        if (currentStability < 0)
+        {
+            currentStability = 0;
+        }
+
+        UIController.instance.UpdateStability(currentStability, maxStability);
     }
+
 
 }
