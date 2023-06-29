@@ -5,7 +5,7 @@ using TMPro;
 
 public class AbilityUnlock : MonoBehaviour
 {
-    public bool unlockDoubleJump, unlockDash, unlockBecomeBall, unlockDropBomb;
+    public bool unlockDoubleJump, unlockDash, unlockBecomeBall, unlockDropBomb, unlockSuperAttack;
 
     public GameObject pickupEffect;
 
@@ -33,6 +33,10 @@ public class AbilityUnlock : MonoBehaviour
             if (unlockDropBomb)
             {
                 player.canDropBomb = true;
+            }
+            if (unlockSuperAttack)
+            {
+                player.canSuperAttack = true;
             }
 
             Instantiate(pickupEffect, transform.position, transform.rotation);

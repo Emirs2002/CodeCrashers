@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6551253508068133043}
   - component: {fileID: 6551253508068133042}
   - component: {fileID: 6551253508068133041}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Karen
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -90,8 +90,6 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 6551253509486566529}
   - {fileID: 6551253509599768714}
-  - {fileID: 0}
-  - {fileID: 6551253509599768714}
   moveSpeed: 5
   waitAtPoints: 0.5
   jumpForce: 10
@@ -132,7 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6551253509486566529}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Patrol Point
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -163,7 +161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6551253509599768714}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Patrol Point (1)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -196,7 +194,7 @@ GameObject:
   - component: {fileID: 6551253509631748680}
   - component: {fileID: 6551253509631748686}
   - component: {fileID: 6551253509631748687}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Karen idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,7 +298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6551253509786933573}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Patrol Points
   m_TagString: Untagged
   m_Icon: {fileID: 0}

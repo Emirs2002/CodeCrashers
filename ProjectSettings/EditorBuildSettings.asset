@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AREA1.unity
     guid: 4cf34b153fd9f8c41af477cc4e2e6f69
+  - enabled: 1
+    path: Assets/Scenes/AREA2.unity
+    guid: 9793575e9b0b9e54eab029811b365192
+  - enabled: 1
+    path: Assets/Scenes/AREA3.unity
+    guid: a097976d6c2b67c4fbe2663ee4054641
+  - enabled: 1
+    path: Assets/Scenes/AREABOSS.unity
+    guid: b60ab3853c2b34145aad317e6b56e34a
   m_configObjects: {}

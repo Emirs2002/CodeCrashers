@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class PlayerAbilityTracker : MonoBehaviour
 {
-    public bool canDoubleJump, canDash, canBecomeBall, canDropBomb;
+    public bool canDoubleJump, canDash, canBecomeBall, canDropBomb, canSuperAttack;
 
 }

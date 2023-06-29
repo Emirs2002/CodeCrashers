@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour
     public BulletController shotToFire;
     public Transform shotPoint;
 
+    public LaptopController laptop;
+    public Transform laptopPoint;
+
     private bool canDoubleJump;
 
     public float dashSpeed, dashTime;
@@ -46,6 +49,16 @@ public class PlayerController : MonoBehaviour
 
     private float coyoteTime = 0.3f;
     private float coyoteCounter;
+    private float timeBetweenAttack;
+    public float startTimeBetweenAttack;
+
+    public Transform attackPos;
+    public LayerMask whatIsEnemies;
+    public float attackRange;
+    public int damageAmount;
+
+    public int currentStability;
+
 
     // Start is called before the first frame update
     void Start()
@@ -53,11 +66,16 @@ public class PlayerController : MonoBehaviour
         abilities = GetComponent<PlayerAbilityTracker>();
 
         canMove = true;
+
+
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (canMove && Time.timeScale != 0)
         {
 
@@ -153,9 +171,39 @@ public class PlayerController : MonoBehaviour
                 else if (ball.activeSelf && abilities.canDropBomb)
                 {
                     Instantiate(bomb, bombPoint.position, bombPoint.rotation);
-
-
                 }
+            }
+
+            //super_attack
+            if (Input.GetKeyDown(KeyCode.Q) && standing.activeSelf && PlayerHealthController.instance.currentStability >= 3)
+            {
+                anim.SetTrigger("Attack");
+                Instantiate(laptop, laptopPoint.position, laptopPoint.rotation).moveDir = new Vector2(transform.localScale.x, 0f);
+                PlayerHealthController.instance.DecreaseStability(3);
+            }
+
+            //melee
+            if (timeBetweenAttack <= 0)
+            {
+                if (Input.GetKeyDown(KeyCode.E) && standing.activeSelf)
+                {
+                    anim.SetTrigger("Attack");
+                    Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+
+                    foreach (Collider2D col in enemiesToDamage)
+                    {
+                        EnemyHealthController enemyHealth = col.GetComponent<EnemyHealthController>();
+                        if (enemyHealth != null)
+                        {
+                            enemyHealth.DamageEnemy(damageAmount);
+                        }
+                    }
+                }
+                timeBetweenAttack = startTimeBetweenAttack;
+            }
+            else
+            {
+                timeBetweenAttack -= Time.deltaTime;
             }
 
             //ball mode
@@ -224,5 +272,11 @@ public class PlayerController : MonoBehaviour
         Destroy(image.gameObject, afterImageLifetime);
 
         afterImageCounter = timeBetweenAfterImages;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPos.position, attackRange);
     }
 }

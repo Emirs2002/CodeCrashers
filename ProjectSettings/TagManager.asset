@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - player
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -19,9 +20,9 @@ TagManager:
   - Destructible
   - Pickups
   - Enemy
-  - 
-  - 
-  - 
+  - TriggerZone
+  - Boss
+  - BossShot
   - 
   - 
   - 

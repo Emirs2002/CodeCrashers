@@ -5,15 +5,16 @@ using UnityEngine;
 public class PlayerHealthController : MonoBehaviour
 {
     public static PlayerHealthController instance;
-    
+
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
-        instance = this;
-        DontDestroyOnLoad(gameObject);
-        } else
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
         {
             Destroy(gameObject);
         }
@@ -46,39 +47,39 @@ public class PlayerHealthController : MonoBehaviour
 
     void Update()
     {
-        if(invincCounter>0)
+        if (invincCounter > 0)
         {
             invincCounter -= Time.deltaTime;
             flashCounter -= Time.deltaTime;
-            if(flashCounter <= 0)
+            if (flashCounter <= 0)
             {
-                foreach( SpriteRenderer sr in playerSprite)
+                foreach (SpriteRenderer sr in playerSprite)
                 {
                     sr.enabled = !sr.enabled;
                 }
                 flashCounter = flashLength;
             }
 
-            if(invincCounter <= 0)
+            if (invincCounter <= 0)
             {
-                foreach( SpriteRenderer sr in playerSprite)
+                foreach (SpriteRenderer sr in playerSprite)
                 {
-                sr.enabled = true;
+                    sr.enabled = true;
                 }
                 flashCounter = 0f;
             }
         }
-                    
-       
+
+
     }
 
-     public void DamagePlayer(int damageAmount)
+    public void DamagePlayer(int damageAmount)
     {
-        if(invincCounter <= 0)
-        {       
+        if (invincCounter <= 0)
+        {
             currentHealth -= damageAmount;
 
-            if(currentHealth<= 0)
+            if (currentHealth <= 0)
             {
                 currentHealth = 0;
                 //gameObject.SetActive(false);
@@ -87,7 +88,7 @@ public class PlayerHealthController : MonoBehaviour
             }
             else
             {
-                invincCounter=invincibilityLength;
+                invincCounter = invincibilityLength;
             }
 
             UIController.instance.UpdateHealth(currentHealth, maxHealth);
@@ -106,11 +107,11 @@ public class PlayerHealthController : MonoBehaviour
     {
         currentHealth += healAmount;
 
-        if(currentHealth>maxHealth)
+        if (currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
         }
-        
+
         UIController.instance.UpdateHealth(currentHealth, maxHealth);
 
     }
@@ -119,12 +120,25 @@ public class PlayerHealthController : MonoBehaviour
     {
         currentStability += stabilityAmount;
 
-        if(currentStability > maxStability)
+        if (currentStability > maxStability)
         {
             currentStability = maxStability;
         }
 
         UIController.instance.UpdateStability(currentStability, maxStability);
     }
+
+    public void DecreaseStability(int stabilityAmount)
+    {
+        currentStability -= stabilityAmount;
+
+        if (currentStability < 0)
+        {
+            currentStability = 0;
+        }
+
+        UIController.instance.UpdateStability(currentStability, maxStability);
+    }
+
 
 }
