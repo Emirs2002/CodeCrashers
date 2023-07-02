@@ -92,6 +92,8 @@ public class PlayerController : MonoBehaviour
 
                     ShowAfterImage();
 
+                    AudioManager.instance.PlaySFXAdjusted(7);
+
                 }
             }
 
@@ -146,10 +148,14 @@ public class PlayerController : MonoBehaviour
                 {
                     canDoubleJump = true;
 
+                    AudioManager.instance.PlaySFXAdjusted(12);
+
                 }
                 else
                 {
                     canDoubleJump = false;
+
+                    AudioManager.instance.PlaySFXAdjusted(9);
 
                 }
 
@@ -167,10 +173,14 @@ public class PlayerController : MonoBehaviour
 
                     anim.SetTrigger("shotFired");
 
+                    AudioManager.instance.PlaySFXAdjusted(14);
+
                 }
                 else if (ball.activeSelf && abilities.canDropBomb)
                 {
                     Instantiate(bomb, bombPoint.position, bombPoint.rotation);
+
+                    AudioManager.instance.PlaySFXAdjusted(13);
                 }
             }
 
@@ -180,6 +190,8 @@ public class PlayerController : MonoBehaviour
                 anim.SetTrigger("Attack");
                 Instantiate(laptop, laptopPoint.position, laptopPoint.rotation).moveDir = new Vector2(transform.localScale.x, 0f);
                 PlayerHealthController.instance.DecreaseStability(3);
+                AudioManager.instance.PlaySFXAdjusted(13);
+
             }
 
             //melee
@@ -189,6 +201,7 @@ public class PlayerController : MonoBehaviour
                 {
                     anim.SetTrigger("Attack");
                     Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+                    AudioManager.instance.PlaySFXAdjusted(14);
 
                     foreach (Collider2D col in enemiesToDamage)
                     {
@@ -217,6 +230,7 @@ public class PlayerController : MonoBehaviour
                         ball.SetActive(true);
                         standing.SetActive(false);
 
+                        AudioManager.instance.PlaySFX(6);
                     }
 
                 }
@@ -235,6 +249,7 @@ public class PlayerController : MonoBehaviour
                         ball.SetActive(false);
                         standing.SetActive(true);
 
+                        AudioManager.instance.PlaySFX(10);
                     }
 
                 }

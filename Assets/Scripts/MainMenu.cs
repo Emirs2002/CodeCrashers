@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour
         if(PlayerPrefs.HasKey("ContinueLevel")){
             continueButton.SetActive(true);
         }
-        
+        AudioManager.instance.PlayMainMenuMusic();
     }
 
     public void NuevoJuego(){
