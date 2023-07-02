@@ -9,20 +9,22 @@ public class EnemyHealthController : MonoBehaviour
 
     public void DamageEnemy(int damageAmount)
     {
-         totalHealth -= damageAmount;
-         if(totalHealth<=0)
+        totalHealth -= damageAmount;
+        if (totalHealth <= 0)
+        {
+            if (deathEffect != null)
             {
-                if(deathEffect != null)
-                {
-                    Instantiate(deathEffect, transform.position, transform.rotation);
-                }
-                Destroy(gameObject);
+                Instantiate(deathEffect, transform.position, transform.rotation);
             }
+            Destroy(gameObject);
+
+            AudioManager.instance.PlaySFXAdjusted(4);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

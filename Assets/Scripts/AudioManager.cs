@@ -8,21 +8,22 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-        }else
+        }
+        else
         {
             Destroy(gameObject);
         }
 
-      
+
     }
     public AudioSource mainMenuMusic, levelMusic, bossMusic;
 
-    public AudioSource[] sfx; 
-    
+    public AudioSource[] sfx;
+
     public void PlayMainMenuMusic()
     {
         levelMusic.Stop();
@@ -32,11 +33,11 @@ public class AudioManager : MonoBehaviour
 
     public void PlayLevelMusic()
     {
-        if(!levelMusic.isPlaying)
+        if (!levelMusic.isPlaying)
         {
-        bossMusic.Stop();
-        mainMenuMusic.Stop();  
-        levelMusic.Play();
+            bossMusic.Stop();
+            mainMenuMusic.Stop();
+            levelMusic.Play();
         }
     }
 
@@ -45,5 +46,17 @@ public class AudioManager : MonoBehaviour
         bossMusic.Play();
         levelMusic.Stop();
 
+    }
+
+    public void PlaySFX(int soundToPlay)
+    {
+        sfx[soundToPlay].Stop();
+        sfx[soundToPlay].Play();
+    }
+
+    public void PlaySFXAdjusted(int sfxToAdjust)
+    {
+        sfx[sfxToAdjust].pitch = Random.Range(.8f, 1.2f);
+        PlaySFX(sfxToAdjust);
     }
 }

@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class HealthPickup : MonoBehaviour
 {
-   public int healAmount;
+    public int healAmount;
 
-   public GameObject pickupEffect;
+    public GameObject pickupEffect;
 
-   private void OnTriggerEnter2D(Collider2D other)
-   {
-        if(other.tag == "Player")
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Player")
         {
             PlayerHealthController.instance.HealPlayer(healAmount);
 
@@ -20,6 +20,8 @@ public class HealthPickup : MonoBehaviour
             }
 
             Destroy(gameObject);
+
+            AudioManager.instance.PlaySFX(5);
         }
-   }
+    }
 }
