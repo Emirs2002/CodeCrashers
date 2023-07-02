@@ -17,7 +17,7 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         player = GetComponent<PlayerAbilityTracker>();
-        
+        continueButton.SetActive(false);
 
         if(PlayerPrefs.HasKey("ContinueLevel")){
             continueButton.SetActive(true);
