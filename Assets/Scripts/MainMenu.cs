@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class MainMenu : MonoBehaviour
     public string NewGameScene;
 
     public GameObject continueButton;
+    public GameObject newButton;
+    public GameObject mensaje;
 
     public PlayerAbilityTracker player;
 
@@ -19,9 +22,13 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Start");
         player = GetComponent<PlayerAbilityTracker>();
         continueButton.SetActive(false);
+        newButton.SetActive(true);
+        mensaje.SetActive(false);
 
         if(PlayerPrefs.HasKey("ContinueLevel")){
             continueButton.SetActive(true);
+            newButton.SetActive(false);
+            mensaje.SetActive(false);
         }
         AudioManager.instance.PlayMainMenuMusic();
     }
@@ -51,6 +58,11 @@ public class MainMenu : MonoBehaviour
 
         Application.Quit();
         Debug.Log("Cerrando juego");
+        PlayerPrefs.DeleteKey("ContinueLevel");
+        continueButton.SetActive(false);
+        newButton.SetActive(false);
+        mensaje.SetActive(true);
+
     }
 
 }

@@ -11,12 +11,11 @@ public class PausaMenu : MonoBehaviour
     public static bool isPaused;
     public static bool isActiveControl;
     private PlayerController thePlayer;
-    public GameObject gameOver;
-   
+    
+
     // Start is called before the first frame update
     void Start()
     {
-        gameOver.SetActive(false);
         pausaMenu.SetActive(false);
         controles.SetActive(false);
         thePlayer = PlayerHealthController.instance.GetComponent<PlayerController>();
