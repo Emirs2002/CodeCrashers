@@ -86,7 +86,11 @@ public class PlayerHealthController : MonoBehaviour
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
+
+                //Game Over
+                Time.timeScale = 0f;  
                 gameOver.SetActive(true);
+                
                 //gameObject.SetActive(false);
 
                 RespawnController.instance.Respawn();
