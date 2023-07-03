@@ -27,19 +27,11 @@ public class MainMenu : MonoBehaviour
     }
 
     public void NuevoJuego(){
-
-        if (PlayerPrefs.HasKey("ContinueLevel")){
-            PlayerPrefs.DeleteAll();
-            UnityEngine.SceneManagement.SceneManager.LoadScene(NewGameScene);
-        }else{
-            Debug.Log("Continuando partida");
-
-            player.gameObject.SetActive(true);
         
-            player.transform.position = new Vector3(PlayerPrefs.GetFloat("PosX"),PlayerPrefs.GetFloat("PosY"),PlayerPrefs.GetFloat("PosZ"));
-            UnityEngine.SceneManagement.SceneManager.LoadScene(NewGameScene);
-        }
+        PlayerPrefs.DeleteAll();
+        player.gameObject.SetActive(true);
         
+        UnityEngine.SceneManagement.SceneManager.LoadScene(NewGameScene);
     }
 
     public void Continue(){
