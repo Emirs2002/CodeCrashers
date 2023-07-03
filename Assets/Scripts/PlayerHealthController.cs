@@ -32,13 +32,13 @@ public class PlayerHealthController : MonoBehaviour
     public float flashLength;
     private float flashCounter;
     public SpriteRenderer[] playerSprite;
-    public GameObject gameOver;
+    //public GameObject gameOver;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        gameOver.SetActive(false);
+        //gameOver.SetActive(false);
         currentHealth = maxHealth;
 
         UIController.instance.UpdateHealth(currentHealth, maxHealth);
@@ -88,8 +88,9 @@ public class PlayerHealthController : MonoBehaviour
                 currentHealth = 0;
 
                 //Game Over
-                Time.timeScale = 0f;  
-                gameOver.SetActive(true);
+                //Time.timeScale = 0f;  
+                //gameOver.SetActive(true);
+                
                 //gameObject.SetActive(false);
 
                 RespawnController.instance.Respawn();
