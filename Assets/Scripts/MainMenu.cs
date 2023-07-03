@@ -31,6 +31,7 @@ public class MainMenu : MonoBehaviour
 
         UnityEngine.SceneManagement.SceneManager.LoadScene(NewGameScene);
 
+        
     }
 
     public void Continue(){
