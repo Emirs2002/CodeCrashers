@@ -29,8 +29,9 @@ public class MainMenu : MonoBehaviour
     public void NuevoJuego(){
         
         PlayerPrefs.DeleteAll();
-        player.gameObject.SetActive(true);
         
+        player.gameObject.SetActive(true);
+
         UnityEngine.SceneManagement.SceneManager.LoadScene(NewGameScene);
     }
 
