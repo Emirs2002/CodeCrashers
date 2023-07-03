@@ -32,6 +32,15 @@ public class PlayerAttack : MonoBehaviour
                         enemyHealth.DamageEnemy(damageAmount);
                     }
                 }
+
+                foreach (Collider2D col in enemiesToDamage)
+                {
+                    BossHealthController bossHealth = col.GetComponent<BossHealthController>();
+                    if (bossHealth != null)
+                    {
+                        bossHealth.TakeDamage(damageAmount);
+                    }
+                }
             }
             timeBetweenAttack = startTimeBetweenAttack;
         }

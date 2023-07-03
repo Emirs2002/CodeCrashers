@@ -42,7 +42,15 @@ public class LaptopController : MonoBehaviour
             {
                 enemyHealth.DamageEnemy(damageAmount);
             }
+
+            BossHealthController bossHealth = col.GetComponent<BossHealthController>();
+            if (bossHealth != null)
+            {
+                bossHealth.TakeDamage(damageAmount);
+            }
         }
+
+
     }
 
 }

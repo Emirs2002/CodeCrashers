@@ -43612,7 +43612,7 @@ MonoBehaviour:
   attackPos: {fileID: 798212795}
   whatIsEnemies:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 10240
   attackRange: 1.5
   damageAmount: 10
   currentStability: 0
