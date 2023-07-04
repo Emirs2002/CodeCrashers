@@ -20,6 +20,8 @@ public class BossBattle : MonoBehaviour
     private float shotCounter;
     public GameObject bullet;
     public Transform shotPoint;
+
+    public GameObject winObjects;
     private bool battleEnded;
     // Start is called before the first frame update
     void Start()
@@ -163,10 +165,20 @@ public class BossBattle : MonoBehaviour
         else
         {
             fadeCounter -= Time.deltaTime;
-            if (fadeCounter <= 0)
+            if (fadeCounter < 0)
             {
+                if (winObjects != null)
+                {
+                    winObjects.SetActive(true);
+                    winObjects.transform.SetParent(null);
+                }
+
                 theCam.enabled = true;
+
                 gameObject.SetActive(false);
+
+                AudioManager.instance.PlayLevelMusic();
+
             }
         }
     }
