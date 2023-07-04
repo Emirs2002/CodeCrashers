@@ -91236,7 +91236,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 10240
   attackRange: 1.5
-  damageAmount: 10
+  damageAmount: 5
   currentStability: 0
 --- !u!114 &1262147544
 MonoBehaviour:

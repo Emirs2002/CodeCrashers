@@ -240,6 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NewGameScene: TUTORIAL
   continueButton: {fileID: 1713511846}
+  newButton: {fileID: 1585756514}
   player: {fileID: 1134561664}
 --- !u!114 &15589543
 MonoBehaviour:

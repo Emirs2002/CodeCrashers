@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour
 
     public GameObject continueButton;
 
+    public GameObject newButton;
+
     public PlayerAbilityTracker player;
 
     // Start is called before the first frame update
@@ -19,26 +21,20 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Start");
         player = GetComponent<PlayerAbilityTracker>();
         continueButton.SetActive(false);
+        newButton.SetActive(true);
 
         if(PlayerPrefs.HasKey("ContinueLevel")){
             continueButton.SetActive(true);
+            newButton.SetActive(false);
         }
         AudioManager.instance.PlayMainMenuMusic();
     }
 
     public void NuevoJuego(){
 
-        if (PlayerPrefs.HasKey("ContinueLevel")){
-            PlayerPrefs.DeleteAll();
-            UnityEngine.SceneManagement.SceneManager.LoadScene(NewGameScene);
-        }else{
-            Debug.Log("Continuando partida");
-
-            player.gameObject.SetActive(true);
+        PlayerPrefs.DeleteAll();
+        UnityEngine.SceneManagement.SceneManager.LoadScene(NewGameScene);
         
-            player.transform.position = new Vector3(PlayerPrefs.GetFloat("PosX"),PlayerPrefs.GetFloat("PosY"),PlayerPrefs.GetFloat("PosZ"));
-            UnityEngine.SceneManagement.SceneManager.LoadScene(NewGameScene);
-        }
         
     }
 
@@ -57,7 +53,9 @@ public class MainMenu : MonoBehaviour
     public void SalirJuego(){
 
         Application.Quit();
-        Debug.Log("Cerrando juego");
+        PlayerPrefs.DeleteKey("ContinueLevel");
+        continueButton.SetActive(false);
+        newButton.SetActive(false);
     }
 
 }
