@@ -67,9 +67,6 @@ public class PlayerController : MonoBehaviour
 
         canMove = true;
 
-
-
-
     }
 
     // Update is called once per frame
@@ -210,6 +207,9 @@ public class PlayerController : MonoBehaviour
                         {
                             enemyHealth.DamageEnemy(damageAmount);
                         }
+
+                        BossHealthController.instance.TakeDamage(damageAmount);
+
                     }
                 }
                 timeBetweenAttack = startTimeBetweenAttack;
